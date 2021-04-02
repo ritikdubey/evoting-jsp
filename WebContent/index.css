@@ -1,0 +1,100 @@
+@CHARSET "ISO-8859-1";
+
+/* CSS for heading transition */
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: #402d2d;
+  color: #31326f;
+  font-weight: 400;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #402d2d;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
+
+
+
+.head-text{
+	margin: 7% 25% 1% 25%;
+}
+
+
+/* End of CSS for heading transition */
+
+
+
+
+.mbtn{
+	margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+#lbtn{
+	margin-right: 20px;
+}
+
+#rbtn{
+	margin-left: 20px;
+}
+
+#qvoc{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	color: #31326f;
+	font-size: 3rem;
+}
+
+body{
+	background-color: #dbf6e9 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #31326f !important;
+}
+
+#head-img{
+	text-align: center;
+	height: 15%;
+	width: 15%;
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  
+}
+

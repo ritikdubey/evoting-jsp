@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="index.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="head-text">
+<h1 class="ml5">
+  <span class="text-wrapper">
+    <span class="line line1"></span>
+    <span class="letters letters-left">Welcome To MATDAAN</span>
+    <span class="line line2"></span>
+  </span>
+</h1>
+</div>
+
+
+<img src="https://media4.giphy.com/media/KAeiul7tXjCtz8dfKA/giphy.gif" id="head-img" />
+
+
+<h2 class="text-center" id="qvoc">Are You a Voter or Candidate?</h2>
+
+<!-- Buttons for Voter and Candidate  -->
+
+<div class="mbtn">
+<button type="button" class="btn btn-outline-primary btn-lg" id="lbtn" onClick="window.location.href='voter.html'">Voter</button>
+
+<button type="button" class="btn btn-outline-primary btn-lg" id="rbtn" onClick="window.location.href='candidate.html'">Candidate</button>
+</div>
+
+
+
+<script> 
+
+anime.timeline({loop: true})
+.add({
+  targets: '.ml5 .line',
+  opacity: [0.5,1],
+  scaleX: [0, 1],
+  easing: "easeInOutExpo",
+  duration: 700
+}).add({
+  targets: '.ml5 .line',
+  duration: 600,
+  easing: "easeOutExpo",
+  translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+}).add({
+  targets: '.ml5 .ampersand',
+  opacity: [0,1],
+  scaleY: [0.5, 1],
+  easing: "easeOutExpo",
+  duration: 600,
+  offset: '-=600'
+}).add({
+  targets: '.ml5 .letters-left',
+  opacity: [0,1],
+  translateX: ["0.5em", 0],
+  easing: "easeOutExpo",
+  duration: 600,
+  offset: '-=300'
+}).add({
+  targets: '.ml5 .letters-right',
+  opacity: [0,1],
+  translateX: ["-0.5em", 0],
+  easing: "easeOutExpo",
+  duration: 600,
+  offset: '-=600'
+}).add({
+  targets: '.ml5',
+  opacity: 0,
+  duration: 1000,
+  easing: "easeOutExpo",
+  delay: 1000
+});
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
