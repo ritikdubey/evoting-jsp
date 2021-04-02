@@ -122,14 +122,5 @@ while(rs3.next())
 </form>
 
 
-
-
-
-
-
-
-
-
-
 </body>
 </html>
